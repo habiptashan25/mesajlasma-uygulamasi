@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mesajlaşma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat">
+  <ul id="mesajlar"></ul>
+  <input id="mesaj" placeholder="Mesaj yaz..." />
+  <button onclick="gonder()">Gönder</button>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
