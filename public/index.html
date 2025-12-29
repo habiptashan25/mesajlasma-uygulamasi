@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Mesajlaşma</title>
+  <link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#0d6efd">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,5 +19,12 @@
 
 <script src="/socket.io/socket.io.js"></script>
 <script src="script.js"></script>
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/sw.js")
+    .then(() => console.log("SW kayıt edildi"));
+}
+</script>
+
 </body>
 </html>
